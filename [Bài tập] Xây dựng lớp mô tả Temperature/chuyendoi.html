@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let Temperature = function (c) {
+    this.c = c;
+    this.changeF = function (c){
+      return ( 9 * this.c) / 5 + 32;
+    }
+    this.changeK = function (c) {
+      return this.c + 273.15;
+    }
+  }
+  var chuyendoi = new Temperature(parseInt(prompt("nhập độ C")));
+  alert(chuyendoi.changeF());
+  alert(chuyendoi.changeK());
+</script>
+</body>
+</html>
